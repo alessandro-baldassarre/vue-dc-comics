@@ -48,7 +48,31 @@
         </div>
       </div>
     </div>
-    <div class="footer-bottom"></div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-button">
+          <a href="#">sign-up now!</a>
+        </div>
+        <div class="footer-social">
+          <a href="#">follow us</a>
+          <a href="#"
+            ><img src="../assets/img/footer-facebook.png" alt="facebook logo" />
+          </a>
+          <a href="#"
+            ><img src="../assets/img/footer-twitter.png" alt="twitter logo" />
+          </a>
+          <a href="#"
+            ><img src="../assets/img/footer-youtube.png" alt="yootube logo" />
+          </a>
+          <a href="#"
+            ><img src="../assets/img/footer-pinterest.png" alt="pinterest logo"
+          /></a>
+          <a href="#"
+            ><img src="../assets/img/footer-periscope.png" alt="periscope logo"
+          /></a>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -215,7 +239,7 @@ export default {
     h5 {
       color: white;
       text-transform: uppercase;
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
     }
     ul {
       list-style-type: none;
@@ -239,5 +263,28 @@ export default {
 .footer-bottom {
   height: 80px;
   background-color: rgb(42, 42, 42);
+  .footer-button a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.6rem 0.8rem;
+    border: 2px solid rgb(0, 116, 245);
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+  .footer-social {
+    a {
+      color: rgb(0, 116, 245);
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    img {
+      margin: 0 0 0 1rem;
+      height: 25px;
+      vertical-align: middle;
+    }
+  }
 }
 </style>
