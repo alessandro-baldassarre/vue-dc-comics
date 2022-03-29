@@ -25,6 +25,7 @@ export default {
   height: 180px;
   margin: 0.5rem;
   text-align: left;
+  cursor: pointer;
   .img-card {
     height: 140px;
     overflow: hidden;

@@ -55,6 +55,7 @@ export default {
     align-items: center;
     height: 100%;
     margin-right: 1rem;
+    cursor: pointer;
     img {
       height: 40%;
       margin-right: 0.5rem;

@@ -236,7 +236,7 @@ export default {
     }
     ul {
       list-style-type: none;
-      margin: 0 1.5rem 0 0;
+      margin: 0 1.5rem 0.5rem 0;
       padding: 0;
     }
     a {
