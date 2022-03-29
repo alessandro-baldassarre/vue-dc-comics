@@ -1,6 +1,8 @@
 <template>
   <div>
     
+    <Jumbotron />
+
     <Products />
 
     <Buy />
@@ -9,12 +11,14 @@
 </template>
 
 <script>
+import Jumbotron from "./Jumbotron.vue";
 import Products from "./Products.vue";
 import Buy from "./Buy.vue";
 
 export default {
   name: "IndexMain",
   components: {
+    Jumbotron,
     Products,
     Buy,
   },
