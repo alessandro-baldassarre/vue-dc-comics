@@ -126,18 +126,18 @@ export default {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 0.6rem 1.2rem;
+    padding: 0.5rem 1.5rem;
     background-color: $primaryColor;
     font-size: 1.2rem;
     font-weight: 600;
     position: absolute;
     top: -1.5rem;
-    left: 220px;
+    left: 16%
   }
   .my-container {
     justify-content: center;
     flex-wrap: wrap;
-    padding: 2rem 0 1rem 0;
+    padding: 2.2rem 0 1rem 0;
     #load-more {
       color: white;
       text-decoration: none;
