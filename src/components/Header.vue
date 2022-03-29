@@ -1,6 +1,6 @@
 <template>
   <div id="header">
-    <div class="container">
+    <div class="my-container">
       <div class="logo">
         <img src="../assets/img/dc-logo.png" alt="dc logo" />
       </div>
@@ -97,45 +97,37 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+@import "../assets/scss/partials/_variables.scss";
 div#header {
   height: 85px;
-  .container {
-    width: 67%;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .logo {
-      img {
-        height: 60px;
-      }
+  .logo {
+    img {
+      height: 60px;
     }
+  }
 
-    .header-nav {
+  .header-nav {
+    height: 100%;
+    ul {
       height: 100%;
-      ul {
-        height: 100%;
-        display: flex;
-        list-style-type: none;
-        margin: 0;
-        li {
-          margin: 0 0.5rem;
-          line-height: 85px;
-          text-transform: uppercase;
-          font-size: 0.65rem;
-          cursor: pointer;
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      li {
+        margin: 0 0.5rem;
+        line-height: 85px;
+        text-transform: uppercase;
+        font-size: 0.65rem;
+        cursor: pointer;
 
-          &:hover {
-            color: rgb(0, 116, 245);
-            border-bottom: 5px solid rgb(0, 116, 245);
-          }
+        &:hover {
+          color: $primaryColor;
+          border-bottom: 5px solid $primaryColor;
         }
-        .active {
-          color: rgb(0, 116, 245);
-          border-bottom: 5px solid rgb(0, 116, 245);
-        }
+      }
+      .active {
+        color: $primaryColor;
+        border-bottom: 5px solid $primaryColor;
       }
     }
   }

@@ -1,16 +1,23 @@
 <template>
   <div>
-    <div class="products">
-      <div class="my-container">
-        <h3>Content</h3>
-      </div>
-    </div>
+    
+    <Products />
+
+    <Buy />
+    
   </div>
 </template>
 
 <script>
+import Products from "./Products.vue";
+import Buy from "./Buy.vue";
+
 export default {
-  name: "MainProducts",
+  name: "IndexMain",
+  components: {
+    Products,
+    Buy,
+  },
 };
 </script>
 
@@ -24,5 +31,10 @@ export default {
   h3 {
     color: white;
   }
+}
+
+.menu-buy {
+  height: 110px;
+  background-color: $primaryColor;
 }
 </style>

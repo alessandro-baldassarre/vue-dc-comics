@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="footer-menu">
-      <div class="container">
+      <div class="my-container">
         <div class="footer-menu-links">
           <div>
             <h5>dc comics</h5>
@@ -49,7 +49,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <div class="container">
+      <div class="my-container">
         <div class="footer-button">
           <a href="#">sign-up now!</a>
         </div>
@@ -221,14 +221,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.container {
-  width: 67%;
-  height: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+@import "../assets/scss/partials/_variables.scss";
 
 .footer-menu {
   height: 280px;
@@ -249,7 +242,7 @@ export default {
     a {
       font-size: 0.6rem;
       text-decoration: none;
-      color: rgb(121, 121, 121);
+      color: $grayColor;
     }
   }
 
@@ -262,19 +255,19 @@ export default {
 
 .footer-bottom {
   height: 80px;
-  background-color: rgb(42, 42, 42);
+  background-color: $lightBlackBgColor;
   .footer-button a {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
     padding: 0.6rem 0.8rem;
-    border: 2px solid rgb(0, 116, 245);
+    border: 2px solid $primaryColor;
     font-size: 0.7rem;
     font-weight: 600;
   }
   .footer-social {
     a {
-      color: rgb(0, 116, 245);
+      color: $primaryColor;
       text-decoration: none;
       text-transform: uppercase;
       font-size: 0.8rem;
